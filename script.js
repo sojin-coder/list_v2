@@ -47,7 +47,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebas
           <td class="text-center fw-bold" style="color:var(--primary-digital)">${index + 1}</td>
           <td class="fw-bold">${escapeHtml(item.full_name)}</td>
           <td><i class="fas fa-map-marker-alt me-2 opacity-50"></i>${escapeHtml(item.address)}</td>
-          <td class="text-end fw-bold" style="color:#00ffaa;">${formatMoney(item.money)}</td>
+          <td class="text-end fw-bold" style="color:#ffa500;">${formatMoney(item.money)}</td>
           <td class="text-center">
             <button class="btn-action btn-edit" onclick="prepareEdit('${id}', '${escapeHtml(item.full_name)}', '${escapeHtml(item.address)}', ${item.money})">
               <i class="fas fa-pen-nib"></i>

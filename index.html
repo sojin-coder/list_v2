@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 <link rel="stylesheet" href="./style.css">
 </head>
+<link rel="stylesheet" href="./style.css">
 <body>
 
 <div class="container mt-4">
@@ -30,22 +31,24 @@
       </div>
     </div>
 
-    <div class="table-responsive">
-      <table class="table-custom">
+   <div class="table-responsive" style="border-radius: 24px;">
+      <table class="table-custom" id="registryTable">
         <thead>
           <tr>
-            <th class="text-center">#</th>
-            <th>ឈ្មោះពេញ</th>
-            <th>អាស័យដ្ឋាន</th>
-            <th class="text-end">ថវិកា</th>
-            <th class="text-center">សកម្មភាព</th>
+            <th width="5%" class="text-center">#</th>
+            <th width="28%">ឈ្មោះពេញ</th>
+            <th width="30%">អាស័យដ្ឋាន</th>
+            <th width="20%" class="text-end">ថវិកា (USD)</th>
+            <th width="17%" class="text-center">សកម្មភាព</th>
           </tr>
         </thead>
         <tbody id="displayTableBody">
-          <tr><td colspan="5" class="text-center py-5">កំពុងទាញទិន្នន័យ...</td></tr>
+          <tr><td colspan="5" class="text-center py-5 text-muted"><i class="fas fa-spinner fa-pulse me-2"></i>កំពុងទាញទិន្នន័យ...</td></tr>
         </tbody>
       </table>
     </div>
+  </div>
+</div>
   </div>
 </div>
 
@@ -71,6 +74,7 @@
           <input type="number" id="editMoney" class="form-control form-control-v2" />
         </div>
         <button id="saveUpdateBtn" class="btn btn-info w-100 fw-bold rounded-pill p-3 mt-3">រក្សាទុកការផ្លាស់ប្តូរ</button>
+        <button id="cencelBtn" class="btn btn-info w-100 fw-bold rounded-pill p-3 mt-3">បោះបង់</button>
       </div>
     </div>
   </div>
